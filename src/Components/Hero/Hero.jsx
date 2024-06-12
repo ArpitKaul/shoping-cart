@@ -5,28 +5,27 @@ import hero_image from '../Assets/hero_image.png'
 
 const Hero = () => {
   return (
-    <div className='h-56 bg-gradient-to-b from-pink-100 via-transparent  flex mt-10 '>
-        <div className='flex-1 flex flex-col justify-center gap-20 pl-28 leading-tight'>
-            <h2 className='text-blue-100 text-xl '>NEW ARRIVALS ONLY</h2>
-            <div>
-                <div>
-                    <p>new</p>
-                    <img src={hand_icon} alt="" />
-                </div>
-                <p>Collections</p>
-                <p>for everyone</p>
-            </div>
-            <div className="hero-latest-btn">
-                <div>
-                    Latest Collection
-                </div>
-                <img src={arrow_icon} alt="" />
-            </div>
+    <div className='relative h-56 bg-gradient-to-b from-pink-100 via-transparent flex mt-10 z-10'>
+      <div className='flex-1 flex flex-col justify-center pl-28 mr-80 mt-56'>
+        <h2 className='text-gray-900 text-sm font-semibold mr-36  '>NEW ARRIVALS ONLY</h2>
+        <div className='flex flex-col items-center gap-5'>  
+          <div className='flex items-center gap-0 '>
+            <p className='text-6xl mr-36  '>new</p>
+            <img className='w-10 ' src={hand_icon} alt="" />
+          </div>
+          <p className='text-6xl font-semibold mr-10  '>Collections</p>
+          <p className='text-6xl font-semibold   '>for everyone</p>
         </div>
-        <div className='hero-right'>
-            <img src={hero_image} alt="" />
+        <div className="flex justify-center items-center gap-5 w-56  rounded-2xl mt-16 ml-16 h-24 bg-red-700 text-xl font-semibold text-white">
+          <div>
+            Latest Collection
+          </div>
+          <img src={arrow_icon} alt="" />
         </div>
-      
+      </div>
+      <div className='hero-right'>
+        <img className='w-96 justify-content-center flex-1 flex items-center' src={hero_image} alt="" />
+      </div>
     </div>
   )
 }
