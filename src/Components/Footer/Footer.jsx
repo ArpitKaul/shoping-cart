@@ -6,7 +6,7 @@ import whatsapp_icon from '../Assets/whatsapp_icon.png'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-24 mt-48 '>
+    <div className='flex flex-col justify-center items-center gap-24 mt-32 '>
       <div className="flex items-center gap-4 ">
         <img src={footer_logo} alt="" />
         <p className='text-gray-800 text-3xl font-semibold'>SHOPPER</p>
